@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bartek.foodscanner.findFood">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="50dp"
+        android:ems="15"
+        android:hint="Post product Code"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/finditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:text="find it" />
+
+    <TextView
+        android:id="@+id/textProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/finditButton"
+        android:layout_below="@+id/finditButton"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:id="@+id/textProductCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textProductName"
+        android:layout_below="@+id/textProductName"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textFirstComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+</RelativeLayout>
