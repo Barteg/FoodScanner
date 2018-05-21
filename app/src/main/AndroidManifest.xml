@@ -3,6 +3,12 @@
     package="com.example.bartek.foodscanner">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    //uprawnienia dla skanera
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA2" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
 
     <application
         android:allowBackup="true"

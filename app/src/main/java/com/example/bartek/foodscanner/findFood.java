@@ -103,15 +103,10 @@ public class findFood
 
         final Button button = (Button) findViewById(R.id.finditButton);
         final String dolan = "empty";
-/*
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://foodapi17.herokuapp.com/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        final Controller service = retrofit.create(Controller.class);*/
+
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://foodapi17.herokuapp.com/")
+                .baseUrl("https://foodapi18.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();

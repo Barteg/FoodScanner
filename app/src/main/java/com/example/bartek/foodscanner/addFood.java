@@ -41,7 +41,6 @@ public class addFood extends AppCompatActivity {
 
         Button addFoodtoDatabase = (Button) findViewById(R.id.addProductButton);
 
-
         addFoodtoDatabase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +59,7 @@ public class addFood extends AppCompatActivity {
     private void  sendNetworkRequest(final foodModel foodmodel) {
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://foodapi17.herokuapp.com/")
+                .baseUrl("https://foodapi18.herokuapp.com/")
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
