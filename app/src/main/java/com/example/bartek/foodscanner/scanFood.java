@@ -85,9 +85,9 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
                     String scanContent = scanningResult.getContents();
                     String scanFormat = scanningResult.getFormatName();
 
-                    formatTxt.append(resp.body().name + "\n");
-                    contentTxt.append(resp.body().code + "\n");
-                    firstTxt.append(resp.body().first + "\n");
+                    formatTxt.append(resp.body().productName + "\n");
+                    contentTxt.append(resp.body().productCode + "\n");
+                    firstTxt.append(resp.body().firstComponent+ "\n");
 
                 }
 

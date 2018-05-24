@@ -106,7 +106,7 @@ public class findFood
 
 
         Retrofit.Builder builder = new Retrofit.Builder()
-                .baseUrl("https://foodapi18.herokuapp.com/")
+                .baseUrl("https://foodapi18.herokuapp.com")
                 .addConverterFactory(GsonConverterFactory.create());
 
         Retrofit retrofit = builder.build();
@@ -125,7 +125,7 @@ public class findFood
                 textProductCode.setText("");
                 textProductFirst.setText("");
 
-                Call<foodModel> createCall = service.getPath(productCode); //w środku service.get pluje się, ze "get(String) w interfejsie nie może być zastosowany"
+                Call<foodModel> createCall = service.getPath(productCode);
 
                 createCall.enqueue(new Callback<foodModel>() {
                     @Override
@@ -134,9 +134,9 @@ public class findFood
 
                             //   textView.setText("ALL foods by name:\n");
                             //  for (Food f : resp.body()) {
-                            textProductName.append(resp.body().name + "\n");
-                            textProductCode.append(resp.body().code + "\n");
-                            textProductFirst.append(resp.body().first + "\n");
+                            textProductName.append(resp.body().productName + "\n");
+                            textProductCode.append(resp.body().productCode + "\n");
+                            textProductFirst.append(resp.body().firstComponent + "\n");
                         }
                         else
                         {

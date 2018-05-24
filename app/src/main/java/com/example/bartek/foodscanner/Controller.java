@@ -18,10 +18,10 @@ public interface Controller {
 
 
         @GET("/product/{name}")
-        Call<foodModel> get(@Path("name") String name);
+        Call<foodModel> get(@Path("name") String productName);
 
         @GET("/producted/{code}")
-        Call<foodModel> getPath(@Path("code") String code);
+        Call<foodModel> getPath(@Path("code") String productCode);
 
         @POST("products/")
         Call<foodModel> create(@Body foodModel postfood);

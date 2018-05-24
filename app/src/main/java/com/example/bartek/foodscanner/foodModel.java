@@ -8,13 +8,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class foodModel {
 
-    @SerializedName("name")
-    public String name;
+    @SerializedName("productName")
+    public String productName;
 
-    @SerializedName("code")
-    public long code;
-    @SerializedName("first")
-    String first;
+    @SerializedName("productCode")
+    public long productCode;
+    @SerializedName("firstComponent")
+    String firstComponent;
 /*
     @SerializedName("second")
     String second;
@@ -23,21 +23,22 @@ public class foodModel {
     String third;
 
 */
-    public foodModel(long code, String name) {
-        this.code = code;
-        this.name = name;
+    public foodModel(long productCode, String productName) {
+        this.productCode = productCode;
+        this.productName = productName;
     }
     public String getName() {
-        return name;
+        return productName;
     }
 
-    public foodModel(String name, long code, String first)
+    public foodModel(String productName, long productCode, String firstComponent)
     {
-        this.name = name;
-        this.code = code;
-        this.first = first;
+        this.productName = productName;
+        this.productCode = productCode;
+        this.firstComponent = firstComponent;
     }
-    public foodModel(String name) {
-        this.name = name;
+    public foodModel(String productName)
+    {
+        this.productName = productName;
     }
 }
