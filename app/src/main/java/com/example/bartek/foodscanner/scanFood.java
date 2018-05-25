@@ -29,10 +29,12 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
     private Button scanBtn;
     private TextView formatTxt, contentTxt, firstTxt, secondTxt, thirdTxt;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan_food);
+
 
         scanBtn = (Button)findViewById(R.id.scan_button);
         scanBtn.setOnClickListener(this);
@@ -76,7 +78,7 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
             secondTxt.setText("");
             thirdTxt.setText("");
             String scanContent = scanningResult.getContents();
-            Call<foodModel> createCall = service.getPath(scanContent); //w środku service.get pluje się, ze "get(String) w interfejsie nie może być zastosowany"
+            Call<foodModel> createCall = service.getPath(scanContent.toString()); //w środku service.get pluje się, ze "get(String) w interfejsie nie może być zastosowany"
             createCall.enqueue(new Callback<foodModel>() {
                 @Override
                 public void onResponse(Call<foodModel> call, Response<foodModel> resp) {

@@ -10,40 +10,41 @@
         android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
         android:ems="10"
-        android:hint="first"
-        android:inputType="textPersonName"
-        android:layout_centerVertical="true"
-        android:layout_alignStart="@+id/editCode" />
+        android:hint="Name"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="39dp"
         android:ems="10"
         android:hint="Code"
-        android:inputType="textPersonName"
-        android:layout_below="@+id/editFirst"
-        android:layout_alignStart="@+id/editFirst"
-        android:layout_marginTop="46dp" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editFirst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editCode"
+        android:layout_below="@+id/editCode"
+        android:layout_marginTop="39dp"
         android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp" />
+        android:hint="first"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/addProductButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/editFirst"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="111dp" />
+        android:layout_marginTop="34dp"
+        android:text="Dodaj" />
 </RelativeLayout>
