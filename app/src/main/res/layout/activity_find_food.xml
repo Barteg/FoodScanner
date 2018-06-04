@@ -52,4 +52,71 @@
         android:layout_below="@+id/textProductCode"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textSecondComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+    <TextView
+        android:id="@+id/textThirdComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textFourthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textFifthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textSixthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textSeventhComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textEighthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textNinthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+    <TextView
+        android:id="@+id/textTenthComponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textProductCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp" />
+
+
 </RelativeLayout>

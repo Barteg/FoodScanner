@@ -27,7 +27,7 @@ import com.google.zxing.integration.android.IntentResult;
 public class scanFood extends AppCompatActivity implements View.OnClickListener {
 
     private Button scanBtn;
-    private TextView formatTxt, contentTxt, firstTxt, secondTxt, thirdTxt;
+    private TextView formatTxt, contentTxt, firstTxt, secondTxt, thirdTxt, fourthTxt, fifthTxt, sixthTxt, seventhTxt, eighthTxt, ninthTxt, tenthTxt ;
 
 
     @Override
@@ -43,6 +43,13 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
         firstTxt = (TextView)findViewById(R.id.firstComponent);
         secondTxt = (TextView)findViewById(R.id.secondComponent);
         thirdTxt = (TextView)findViewById(R.id.thirdComponent);
+        fourthTxt = (TextView)findViewById(R.id.fourthComponent);
+        fifthTxt = (TextView)findViewById(R.id.fifthComponent);
+        sixthTxt = (TextView)findViewById(R.id.sixthComponent);
+        seventhTxt = (TextView)findViewById(R.id.seventhComponent);
+        eighthTxt = (TextView)findViewById(R.id.eighthComponent);
+        ninthTxt = (TextView)findViewById(R.id.ninthComponent);
+        tenthTxt = (TextView)findViewById(R.id.tenthComponent);
         //listen for clicks
        // scanBtn.setOnClickListener((View.OnClickListener) this);
 
@@ -77,6 +84,13 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
             firstTxt.setText("");
             secondTxt.setText("");
             thirdTxt.setText("");
+            fourthTxt.setText("");
+            fifthTxt.setText("");
+            sixthTxt.setText("");
+            seventhTxt.setText("");
+            eighthTxt.setText("");
+            ninthTxt.setText("");
+            tenthTxt.setText("");
             String scanContent = scanningResult.getContents();
             Call<foodModel> createCall = service.getPath(scanContent.toString()); //w środku service.get pluje się, ze "get(String) w interfejsie nie może być zastosowany"
             createCall.enqueue(new Callback<foodModel>() {
@@ -84,13 +98,21 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
                 public void onResponse(Call<foodModel> call, Response<foodModel> resp) {
 
 
-                    String scanContent = scanningResult.getContents();
-                    String scanFormat = scanningResult.getFormatName();
+                    //String scanContent = scanningResult.getContents();
+                    //String scanFormat = scanningResult.getFormatName();
 
                     formatTxt.append(resp.body().productName + "\n");
                     contentTxt.append(resp.body().productCode + "\n");
                     firstTxt.append(resp.body().firstComponent+ "\n");
-
+                    secondTxt.append(resp.body().secondComponent+ "\n");
+                    thirdTxt.append(resp.body().thirdComponent+ "\n");
+                    fourthTxt.append(resp.body().fourthComponent+ "\n");
+                    fifthTxt.append(resp.body().fifthComponent+ "\n");
+                    sixthTxt.append(resp.body().sixthComponent+ "\n");
+                    seventhTxt.append(resp.body().seventhComponent+ "\n");
+                    eighthTxt.append(resp.body().eighthComponent+ "\n");
+                    ninthTxt.append(resp.body().ninthComponent+ "\n");
+                    tenthTxt.append(resp.body().tenthComponent+ "\n");
                 }
 
                 @Override

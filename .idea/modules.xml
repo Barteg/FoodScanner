@@ -3,10 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FoodScanner.iml" filepath="$PROJECT_DIR$/FoodScanner.iml" />
-      <module fileurl="file://D:\AndroidApps\FoodScanner\FoodScanner.iml" filepath="D:\AndroidApps\FoodScanner\FoodScanner.iml" />
       <module fileurl="file://D:\AndroidApps\FoodScanner\FoodScanner-master.iml" filepath="D:\AndroidApps\FoodScanner\FoodScanner-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://D:\AndroidApps\FoodScanner\app\app.iml" filepath="D:\AndroidApps\FoodScanner\app\app.iml" />
     </modules>
   </component>
 </project>

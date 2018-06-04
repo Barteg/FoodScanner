@@ -36,8 +36,15 @@ public class addFood extends AppCompatActivity {
         final EditText editName = (EditText) findViewById(R.id.editName);
         final EditText editCode = (EditText) findViewById(R.id.editCode);
         final EditText editFirst = (EditText) findViewById(R.id.editFirst);
-        /*final EditText editSecond = (EditText) findViewById(R.id.editSecond);
-        final EditText editThird = (EditText) findViewById(R.id.editThird);*/
+        final EditText editSecond = (EditText) findViewById(R.id.editSecond);
+        final EditText editThird = (EditText) findViewById(R.id.editThird);
+        final EditText editFourth = (EditText) findViewById(R.id.editFourth);
+        final EditText editFifth = (EditText) findViewById(R.id.editFifth);
+        final EditText editSixth = (EditText) findViewById(R.id.editSixth);
+        final EditText editSeventh = (EditText) findViewById(R.id.editSeventh);
+        final EditText editEighth= (EditText) findViewById(R.id.editEighth);
+        final EditText editNinth = (EditText) findViewById(R.id.editNinth);
+        final EditText editTenth = (EditText) findViewById(R.id.editTenth);
 
         Button addFoodtoDatabase = (Button) findViewById(R.id.addProductButton);
 
@@ -48,7 +55,16 @@ public class addFood extends AppCompatActivity {
                 foodModel foodmodel = new foodModel(
                         editName.getText().toString(),
                         Long.parseLong(editCode.getText().toString()),
-                        editFirst.getText().toString()
+                        editFirst.getText().toString(),
+                        editSecond.getText().toString(),
+                        editThird.getText().toString(),
+                        editFourth.getText().toString(),
+                        editFifth.getText().toString(),
+                        editSixth.getText().toString(),
+                        editSeventh.getText().toString(),
+                        editEighth.getText().toString(),
+                        editNinth.getText().toString(),
+                        editTenth.getText().toString()
                 );
                 sendNetworkRequest(foodmodel);
             }

@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName" />
@@ -21,9 +20,8 @@
         android:id="@+id/editCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editName"
         android:layout_below="@+id/editName"
-        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Code"
         android:inputType="textPersonName" />
@@ -32,9 +30,8 @@
         android:id="@+id/editFirst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editCode"
         android:layout_below="@+id/editCode"
-        android:layout_marginTop="39dp"
+        android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="first"
         android:inputType="textPersonName" />
@@ -43,8 +40,100 @@
         android:id="@+id/addProductButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Dodaj" />
+
+    <EditText
+        android:id="@+id/editSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/editFirst"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:text="Dodaj" />
+        android:ems="10"
+        android:hint="second"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editThird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSecond"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="third"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editFourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editThird"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="fourth"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editFifth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFourth"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="fifth"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editSixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFifth"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="sixth"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editSeventh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSixth"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="seventh"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEighth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSeventh"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="eighth"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editNinth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addProductButton"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="ninth"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTenth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="tenth"
+        android:inputType="textPersonName" />
+
+
 </RelativeLayout>
