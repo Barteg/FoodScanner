@@ -53,7 +53,7 @@ public class addFood extends AppCompatActivity {
             public void onClick(View v) {
 
                 foodModel foodmodel = new foodModel(
-                        editName.getText().toString(),
+                        editName.getText().toString().trim().toLowerCase(),
                         Long.parseLong(editCode.getText().toString()),
                         editFirst.getText().toString(),
                         editSecond.getText().toString(),
@@ -86,7 +86,7 @@ public class addFood extends AppCompatActivity {
         call.enqueue(new Callback<foodModel>() {
             @Override
             public void onResponse(Call<foodModel> call, Response<foodModel> response) {
-                Toast.makeText(addFood.this, "Tak! Nazwa poduktu:" + response.body().getName(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(addFood.this, "Tak! Nazwa poduktu:" + response.body().getName().trim(), Toast.LENGTH_SHORT).show();
             }
 
             @Override

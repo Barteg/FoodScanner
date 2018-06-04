@@ -17,16 +17,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".findFood" />
-        <activity android:name=".scanFood" />
-        <activity android:name=".addFood"></activity>
+        <activity android:name=".findFood"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".scanFood"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".addFood"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>
