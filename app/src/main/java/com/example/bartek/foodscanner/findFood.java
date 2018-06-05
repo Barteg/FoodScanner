@@ -82,19 +82,82 @@ public class findFood
                     public void onResponse(Call<foodModel> call, Response<foodModel> resp) {
                         if (resp.body() != null) {
 
-                            //   textView.setText("ALL foods by name:\n");
-                            //  for (Food f : resp.body()) {
                             textProductName.append(resp.body().productName + "\n");
                             textProductCode.append(resp.body().productCode + "\n");
-                            textProductFirst.append(resp.body().firstComponent + "\n");
-                            textProductSecond.append(resp.body().secondComponent + "\n");
+
+                            //pierwszy
+                            if(resp.body().firstComponent == null) {
+                                textProductFirst.setVisibility(View.GONE);
+                            }
+                            else {
+                                textProductFirst.append(resp.body().firstComponent + "\n");
+                            }
+                            //drugi
+                            if(resp.body().secondComponent == null) {
+                                textProductSecond.setVisibility(View.GONE);
+                            }
+                            else {
+                                textProductSecond.append(resp.body().secondComponent + "\n");
+                            }
+
+                            //trzeci
+                            if(resp.body().thirdComponent == null)
+                                textProductThird.setVisibility(View.GONE);
+                            else
                             textProductThird.append(resp.body().thirdComponent + "\n");
+
+                            //czwarty
+                            if(resp.body().fourthComponent == null)
+                                textProductFourth.setVisibility(View.GONE);
+                            else
                             textProductFourth.append(resp.body().fourthComponent + "\n");
+
+                            //piąty
+                            if(resp.body().fifthComponent == null)
+                                textProductFifth.setVisibility(View.GONE);
+                            else
                             textProductFifth.append(resp.body().fifthComponent + "\n");
-                            textProductSixth.append(resp.body().sixthComponent + "\n");
+
+                            //szósty
+                            if(resp.body().sixthComponent == null)
+                                textProductSixth.setVisibility(View.GONE);
+                            else
+                                textProductSixth.append(resp.body().sixthComponent + "\n");
+
+                            //siódmy
+                            if(resp.body().seventhComponent == null)
+                            {
+                                //textProductSixth.append(resp.body().sixthComponent + "\n");
+                                textProductSeventh.setVisibility(View.GONE);
+                            }
+                            else
                             textProductSeventh.append(resp.body().seventhComponent + "\n");
+
+                            //ósmy
+                            if(resp.body().eighthComponent == null)
+                            {
+                                //textProductSixth.append(resp.body().sixthComponent + "\n");
+                                textProductEighth.setVisibility(View.GONE);
+                            }
+                            else
                             textProductEighth.append(resp.body().eighthComponent + "\n");
-                            textProductNinth.append(resp.body().ninthComponent + "\n");
+
+                            //dziewiąty
+                            if(resp.body().ninthComponent == null)
+                            {
+                                //textProductSixth.append(resp.body().sixthComponent + "\n");
+                                textProductNinth.setVisibility(View.GONE);
+                            }
+                            else
+                            textProductTenth.append(resp.body().tenthComponent + "\n");
+
+                            //dziesiąty
+                            if(resp.body().tenthComponent == null)
+                            {
+                                //textProductSixth.append(resp.body().sixthComponent + "\n");
+                                textProductTenth.setVisibility(View.GONE);
+                            }
+                            else
                             textProductTenth.append(resp.body().tenthComponent + "\n");
                         }
                         else

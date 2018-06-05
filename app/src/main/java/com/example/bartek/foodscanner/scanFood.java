@@ -26,6 +26,7 @@ import com.google.zxing.integration.android.IntentResult;
  */
 public class scanFood extends AppCompatActivity implements View.OnClickListener {
 
+
     private Button scanBtn;
     private TextView formatTxt, contentTxt, firstTxt, secondTxt, thirdTxt, fourthTxt, fifthTxt, sixthTxt, seventhTxt, eighthTxt, ninthTxt, tenthTxt ;
 
@@ -102,16 +103,67 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
                     //String scanFormat = scanningResult.getFormatName();
 
                     formatTxt.append(resp.body().productName + "\n");
+
                     contentTxt.append(resp.body().productCode + "\n");
-                    firstTxt.append(resp.body().firstComponent+ "\n");
+
+                    //pierwszy
+                    if(resp.body().firstComponent == null)
+                        firstTxt.setVisibility(View.GONE);
+                    else
+                        firstTxt.append(resp.body().firstComponent + "\n");
+
+                    //drugi
+                    if(resp.body().secondComponent == null)
+                        secondTxt.setVisibility(View.GONE);
+                    else
                     secondTxt.append(resp.body().secondComponent+ "\n");
+
+                    //trzeci
+                    if(resp.body().thirdComponent == null)
+                        thirdTxt.setVisibility(View.GONE);
+                    else
                     thirdTxt.append(resp.body().thirdComponent+ "\n");
+
+                    //czwarty
+                    if(resp.body().fourthComponent == null)
+                        fourthTxt.setVisibility(View.GONE);
+                    else
                     fourthTxt.append(resp.body().fourthComponent+ "\n");
+
+                    //piaty
+                    if(resp.body().fifthComponent == null)
+                        fifthTxt.setVisibility(View.GONE);
+                    else
                     fifthTxt.append(resp.body().fifthComponent+ "\n");
+
+                    //szósty
+                    if(resp.body().sixthComponent == null)
+                        sixthTxt.setVisibility(View.GONE);
+                    else
                     sixthTxt.append(resp.body().sixthComponent+ "\n");
+
+                    //siódmy
+                    if(resp.body().seventhComponent == null)
+                        seventhTxt.setVisibility(View.GONE);
+                    else
                     seventhTxt.append(resp.body().seventhComponent+ "\n");
+
+                    //ósmy
+                    if(resp.body().eighthComponent == null)
+                        eighthTxt.setVisibility(View.GONE);
+                    else
                     eighthTxt.append(resp.body().eighthComponent+ "\n");
+
+                    //dziewiaty
+                    if(resp.body().ninthComponent == null)
+                        ninthTxt.setVisibility(View.GONE);
+                    else
                     ninthTxt.append(resp.body().ninthComponent+ "\n");
+
+                    //dziesiaty
+                    if(resp.body().tenthComponent == null)
+                        tenthTxt.setVisibility(View.GONE);
+                    else
                     tenthTxt.append(resp.body().tenthComponent+ "\n");
                 }
 
@@ -149,5 +201,6 @@ public class scanFood extends AppCompatActivity implements View.OnClickListener 
         if (ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.CAMERA}, 50);
         }
+        }
     }
-}
+
