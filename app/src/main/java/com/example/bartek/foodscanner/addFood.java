@@ -53,7 +53,7 @@ public class addFood extends AppCompatActivity {
             public void onClick(View v) {
 
                 foodModel foodmodel = new foodModel(
-                        editName.getText().toString().trim().toLowerCase(),
+                        editName.getText().toString(),
                         Long.parseLong(editCode.getText().toString()),
                         editFirst.getText().toString(),
                         editSecond.getText().toString(),

@@ -35,6 +35,9 @@
         <activity android:name=".addFood"
             android:label="@string/app_name"
             android:screenOrientation="portrait"/>
+        <activity android:name=".DeleteFood"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

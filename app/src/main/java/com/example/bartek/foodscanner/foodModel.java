@@ -53,6 +53,10 @@ public class foodModel {
         return productName;
     }
 
+    public foodModel(long productCode) {
+        this.productCode = productCode;
+    }
+
     public foodModel(String productName, long productCode, String firstComponent, String secondComponent, String thirdComponent, String fourthComponent,
                      String fifthComponent, String sixthComponent, String seventhComponent, String eighthComponent,   String ninthComponent, String tenthComponent)
     {

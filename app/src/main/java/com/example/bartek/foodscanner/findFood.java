@@ -43,7 +43,7 @@ public class findFood
         final  TextView textProductTenth = (TextView) findViewById(R.id.textTenthComponent);
 
         final Button button = (Button) findViewById(R.id.finditButton);
-        final String dolan = "empty";
+        //final String dolan = "empty";
 
 
         Retrofit.Builder builder = new Retrofit.Builder()
@@ -60,7 +60,7 @@ public class findFood
             public void onClick(View v) {
 
                 final String productCode = editText.getText().toString();
-
+                //final String productName = editText.getText().toString().trim().toLowerCase();
                 //czyszczenie pól tekstowych
                 textProductName.setText("");
                 textProductCode.setText("");
@@ -76,7 +76,7 @@ public class findFood
                 textProductTenth.setText("");
 
                 Call<foodModel> createCall = service.getPath(productCode);
-
+                //Call<foodModel> callName = service.getPath(productName);
                 createCall.enqueue(new Callback<foodModel>() {
                     @Override
                     public void onResponse(Call<foodModel> call, Response<foodModel> resp) {
