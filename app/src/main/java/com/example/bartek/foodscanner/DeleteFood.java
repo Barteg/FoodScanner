@@ -12,8 +12,6 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import retrofit2.http.DELETE;
-import retrofit2.http.Path;
 
 /**
  * Created by Radex on 05.06.2018.
@@ -47,16 +45,19 @@ public class DeleteFood extends AppCompatActivity {
                Call<foodModel> deleteCall = service.deleteProduct(productCode);
 
                 deleteCall.enqueue(new Callback<foodModel>() {
+
                     @Override
                     public void onResponse(Call<foodModel> call, Response<foodModel> response) {
-                        if(response.body()!=null) {
-                            Toast.makeText(DeleteFood.this, "Usunięto produkt o kodzie: " + response.body().getName(), Toast.LENGTH_LONG).show();
+
+                            //if (response.body().productCode == deleteText)
+
+                            Toast.makeText(DeleteFood.this, "nie usunięto: " + response.body().getName(), Toast.LENGTH_LONG).show();
                         }
-                    }
+
 
                     @Override
                     public void onFailure(Call<foodModel> call, Throwable t) {
-                        Toast.makeText(DeleteFood.this, "Błąd, zły kod produktu", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DeleteFood.this, "Usunięto ", Toast.LENGTH_LONG).show();
                     }
                 });
             }

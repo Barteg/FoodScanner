@@ -27,6 +27,6 @@ public interface Controller {
         @POST("products/")
         Call<foodModel> create(@Body foodModel postfood);
 
-        @DELETE("/products/{code}")
+        @DELETE("/product/{code}")
         Call<foodModel> deleteProduct(@Path("code") String productCode);
 }
